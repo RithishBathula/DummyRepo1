@@ -1,12 +1,15 @@
 <html>
 <head>
+<script language="javascript" type="text/javascript" src="datavalidate.js">
+</script>
+</head>
 <body>
 <center>
 <br>
 <br>
 <br>
 <table frame="box">
-<form method="post" onsubmit="validate();">
+<form method="post" onsubmit="validate()">
 <tr>
 <td colspan="5"><center><h3>Registeration form</h3></center>
 </td>
@@ -21,7 +24,7 @@
 </tr>
 <tr>
 <td>Re-Enter Password: </td>
-<td><input type="password" name="password" required/></td>
+<td><input type="password" name="re-password" required/></td>
 </tr>
 <tr>
 <td>Country</td>
@@ -41,17 +44,25 @@
 <td>date of birth </td>
 <td><input type="Date" name="dob"/></td>
 </tr>
+<tr><td>
+Degree
+</td>
+<td><input type="checkbox" value="degree">B.Tech<br>
+<input type="checkbox" value="degree">M.Tech<br>
+<input type="checkbox" value="degree">M.Sc
+</td>
+</tr>
 <tr>
 <td>
 </td>
 </tr>
 <tr>
-<td colspan="3"><center><input type="submit" name="submit" value="submit"/></center></td>
+<td colspan="3"><center><input type="submit" name="submit" value="submit" /></center></td>
 </tr>
 </form>
 </table>
 </center>
 </body>
-</head>
+
 </html>
 
